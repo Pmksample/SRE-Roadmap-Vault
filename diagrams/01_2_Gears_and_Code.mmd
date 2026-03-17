@@ -1,0 +1,20 @@
+graph TD
+    subgraph "Engineering (Software)"
+    Code[Code / Automation]
+    end
+    
+    subgraph "Operations (Systems)"
+    G1((Gear A))
+    G2((Gear B))
+    G3((Gear C))
+    end
+    
+    Code ==> G1
+    G1 --- G2
+    G2 --- G3
+    G3 --- G1
+    
+    style Code fill:#f3e5f5,stroke:#4a148c
+    style G1 fill:#e0f2f1,stroke:#004d40
+    style G2 fill:#e0f2f1,stroke:#004d40
+    style G3 fill:#e0f2f1,stroke:#004d40

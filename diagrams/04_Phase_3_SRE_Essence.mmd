@@ -1,0 +1,11 @@
+graph TD
+    SRE[SRE: Site Reliability Engineering]
+    SRE --> Obs[Observability<br/>Metrics/Logs/Traces]
+    SRE --> EB[Error Budget]
+    
+    EB --> SLI[SLI: Indicators]
+    EB --> SLO[SLO: Objectives]
+
+    subgraph "The Balance"
+    Speed[Feature Velocity] --- Balance((Balance)) --- Stability[Reliability]
+    end

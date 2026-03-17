@@ -1,0 +1,16 @@
+graph LR
+    subgraph "Linux (Operating System)"
+    L1[CLI / Shell]
+    L2[Permissions]
+    L3[Process Mgmt]
+    end
+
+    subgraph "Networking"
+    N1[HTTP / DNS]
+    N2[TCP / IP]
+    N3[SSL / TLS]
+    end
+
+    L1 --- N1
+    L2 --- N2
+    L3 --- N3

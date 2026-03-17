@@ -1,0 +1,12 @@
+graph LR
+    subgraph "Manual Era"
+    M1(Manual Setup) -- Slow/Error-prone --> M2[Server]
+    end
+
+    subgraph "Modern Era (IaC/Container)"
+    D[Docker] --> K[Kubernetes]
+    T[Terraform] --> K
+    K --> S[Scalable Infra]
+    end
+
+    M1 -.-> T

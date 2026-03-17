@@ -1,0 +1,16 @@
+graph LR
+    subgraph "Traditional Infra"
+    I1[Build Server]
+    I2[Manual Setup]
+    I3[Focus: Hardware/VM]
+    end
+
+    subgraph "SRE"
+    S1[Code for Reliability]
+    S2[Automate Everything]
+    S3[Focus: Service SLO]
+    end
+
+    I1 -.-> S1
+    I2 -.-> S2
+    I3 -.-> S3

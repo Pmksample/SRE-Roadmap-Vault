@@ -1,0 +1,9 @@
+graph TD
+    Total[100% の稼働時間] --> Reliable[信頼性の目標 / SLO]
+    Total --> Budget[エラー予算 / Error Budget]
+    
+    Reliable --> |"守り"| Ops[安定運用の維持]
+    Budget --> |"攻め"| Dev[新機能のリリース / 挑戦]
+    
+    style Budget fill:#ffcdd2,stroke:#d32f2f
+    style Reliable fill:#c8e6c9,stroke:#388e3c

@@ -40,4 +40,4 @@
 
 ---
 **🎥 YouTube Series:** [Quiet Growth Channel](https://www.youtube.com/@QuietGrowth?sub_confirmation=1)
-**📝 Zenn Article:** [SRE 独学ロードマップ完全ガイド](https://zenn.dev/quietgrowth)
+**📝 Zenn Article:** [SRE 独学ロードマップ完全ガイド](https://zenn.dev/quietgrowth

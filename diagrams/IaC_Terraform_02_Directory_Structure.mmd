@@ -1,0 +1,33 @@
+graph TD
+    Root[terraform-root/]
+    
+    Root --> Env[environments/]
+    Root --> Mod[modules/]
+    Root --> Backend["backend.tf (Remote State)"]
+    
+    Env --> Staging[staging/]
+    Env --> Prod[production/]
+    
+    Staging --> SMain[main.tf]
+    Staging --> SVar[variables.tf]
+    
+    Prod --> PMain[main.tf]
+    Prod --> PVar[variables.tf]
+    
+    Mod --> VPC[vpc/]
+    Mod --> DB[db/]
+    Mod --> App[app/]
+    
+    SMain --> VPC
+    SMain --> DB
+    SMain --> App
+    
+    PMain --> VPC
+    PMain --> DB
+    PMain --> App
+    
+    style Root fill:#f9f,stroke:#333
+    style Env fill:#e1f5fe
+    style Mod fill:#e1f5fe
+    style Prod fill:#ffcdd2
+    style Staging fill:#c8e6c9

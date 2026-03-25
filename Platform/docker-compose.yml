@@ -1,0 +1,12 @@
+# Backstage Demo for SRE Roadmap Series
+# Use this to capture screenshots/video for Video #7: Platform Engineering 入門
+
+services:
+  backstage:
+    image: backstage/backstage:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      # For a simple demo, we use basic settings
+    # Note: This is for demo/screencapture purposes only.

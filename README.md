@@ -1,70 +1,43 @@
-# SRE-Roadmap-Vault (2026年版)
+# 🚀 SRE Roadmap Vault 2026
 
-YouTube動画「【2026年版】初心者向け SRE 独学ロードマップ」で紹介した図解データと学習リソースの保管場所です。
+このリポジトリは、YouTube シリーズ「[2026年版 SRE 独学ロードマップ]([YouTube プレイリスト URL])」で使用されたすべての図解、テンプレート、コードサンプルを集約した「外部脳（Vault）」の実体です。
 
-「Quiet Growth（静かな成長）」をテーマに、派手な流行に振り回されず、エンジニアリングの基礎を淡々と積み上げるためのガイドとして活用してください。
+## 📂 コンテンツ一覧
 
----
+### 1. 📊 ロードマップ & 図解 ([/Diagrams](./Diagrams))
+- SRE の学習ステップ、各技術要素のつながりを視覚化した図解（Mermaid 形式および画像）。
 
-## 🗺 ロードマップ図解 (Roadmap Diagrams)
+### 2. 📝 SLO 設計ワークシート ([/Worksheets](./Worksheets))
+- [SLO_Design_Template.md](./Worksheets/SLO_Design_Template.md): 信頼性を「指標」で管理するための具体的な 4 ステップ・ワークシート。
 
-### 1. 全体像 (Overall Roadmap)
-SREへの道のりを、OSの基礎から信頼性設計まで3つのフェーズで整理しています。
-- [Mermaid形式](diagrams/01_Overall_Roadmap.mmd)
-- [画像形式 (PNG)](images/01_Overall_Roadmap.png)
+### 3. 🏗️ IaC & GitOps ([/IaC](./IaC), [/GitOps](./GitOps))
+- Terraform の推奨ディレクトリ構成案、GitHub Actions での CI/CD (OIDC) 設定サンプル。
 
-### 2. 各フェーズの詳細 (Phase Details)
-- **Phase 1: Foundation (Linux & Network)**
-  - [Mermaid](diagrams/02_Phase_1_Foundation.mmd) / [PNG](images/02_Phase_1_Foundation.png)
-- **Phase 2: Core Tech (Docker & IaC/Terraform)**
-  - [Mermaid](diagrams/03_Phase_2_CoreTech.mmd) / [PNG](images/03_Phase_2_CoreTech.png)
-- **Phase 3: SRE Essence (Visualization & SLO/SLI)**
-  - [Mermaid](diagrams/04_Phase_3_SRE_Essence.mmd) / [PNG](images/04_Phase_3_SRE_Essence.png)
+### 4. 📈 Observability & Dashboard ([/Observability](./Observability))
+- Prometheus / Grafana のセットアップコード (docker-compose) およびダッシュボード構成案。
 
-### 3. 実践！SLI/SLO設計 (SLI/SLO Design)
-- **共通言語化 (Common Language)**
-  - [Mermaid](diagrams/SLI_SLO/01_Common_Language.mmd) / [PNG](images/SLI_SLO/01_Common_Language.png)
-- **ユーザー体験からの逆算 (UX Backwards)**
-  - [Mermaid](diagrams/SLI_SLO/02_UX_Backwards.mmd) / [PNG](images/SLI_SLO/02_UX_Backwards.png)
-- **信頼性予算とバランス (Reliability Budget Balance)**
-  - [Mermaid](diagrams/SLI_SLO/03_Reliability_Budget_Balance.mmd) / [PNG](images/SLI_SLO/03_Reliability_Budget_Balance.png)
-- **SLO設計ステップ (SLO Design Steps)**
-  - [Mermaid](diagrams/SLI_SLO/04_SLO_Design_Steps.mmd) / [PNG](images/SLI_SLO/04_SLO_Design_Steps.png)
+### 5. 🩹 インシデント管理 & ポストモーテム ([/Templates](./Templates))
+- [POST_MORTEM_TEMP.md](./Templates/POST_MORTEM_TEMP.md): 障害を「ギフト」に変え、組織を強化するための責めないポストモーテム・テンプレート。
+
+### 6. 🛣️ Platform Engineering ([/Platform](./Platform))
+- Backstage 等の IDP (Internal Development Platform) 導入に向けたチェックリストと基本構成。
+
+### 7. 🎯 生存戦略 ([/Survival](./Survival))
+- 技術選定マトリクス、33歳未経験から SRE として価値を出すための戦略図解。
 
 ---
 
-## 📚 学習リソース集 (Learning Resources)
-動画内で厳選した書籍やWebリソースのリストです。
-- [Learning_Resources.md](Learning_Resources.md)
+## 🛠️ 使い方
+
+1. このリポジトリを `git clone` するか、必要なファイルを直接コピーしてください。
+2. 各ディレクトリの `README.md`（順次追加予定）に従って、自分の環境に合わせた「Vault」を構築してください。
+3. 学習の記録は、自分なりの言葉で書き換えることが「静かな成長」への近道です。
+
+## 🌿 Quiet Growth について
+
+このプロジェクトは「焦らず、淡々と、仕組みで人生を耕す」ことを信条としています。
+技術はツールであり、目的は「あなた自身の信頼性と自由」を築くことです。
 
 ---
-
-## 📄 配布資料 (Resources / Templates)
-動画内で紹介した設計ワークシートなどの実用ツールです。
-
-- **SLI/SLO 設計ワークシート (v1.0)**
-  - [Markdown形式](templates/SLO_Design_Worksheet_Template.md)
-  - サービスの「信頼性」を定義するための実践的なワークシートです。
-
----
-
-## 🎬 動画字幕データ (Subtitles)
-アクセシビリティ向上や翻訳等のために、動画の字幕データを公開しています。
-- **実践！SLI/SLO設計ガイド**
-  - [SRT形式](subtitles/Final_Subtitles_SLI_SLO.srt)
-
----
-
-## 💡 使い方
-- このリポジトリをクローンして、自分専用のロードマップとしてカスタマイズする。
-- Mermaidファイル (`.mmd`) を編集して、学んだ技術を追記していく。
-- 課題（Issue）やプルリクエスト（PR）で、新しい推奨リソースや技術トレンドを共有する。
-
----
-
-## 📢 関連リンク
-- YouTube動画: [URL placeholder]
-- Twitter/X: [URL placeholder]
-- Blog/Zenn: [URL placeholder]
-
-#SRE #Roadmap #QuietGrowth #2026 #InfrastructureEngineering
+**🎥 YouTube Series:** [Quiet Growth Channel](https://www.youtube.com/@QuietGrowth?sub_confirmation=1)
+**📝 Zenn Article:** [SRE 独学ロードマップ完全ガイド](https://zenn.dev/quietgrowth)

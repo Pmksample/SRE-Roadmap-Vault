@@ -6,6 +6,7 @@ status: draft
 tags:
   - post-mortem
   - incident-report
+project: P:Life_Misc
 ---
 
 # 📝 ポストモーテム：[インシデント名称]
